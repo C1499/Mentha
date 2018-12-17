@@ -41,7 +41,11 @@ public Rcy_Adapter(Context context, List<Text> textList){
 rcy_viewholder.cardView.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View view) {
-        int a = i+1;
+       int Maxdata =getItemCount();
+        ;
+
+
+        int a = -(i-Maxdata);
         String b =textList.get(i).getContent();
         Util.showToast(context,"第"+a+"条");
         Intent ShowIntent = new Intent(context,ShowTextActivity.class );

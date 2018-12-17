@@ -85,7 +85,7 @@ public class ShowActivity extends AppCompatActivity {
         //d= getIntent().getIntExtra("Number2",0);
         //  List<Text>texts= null;
         //查询当前登陆用户的日记
-        textLista = DataSupport.where("users_id = ?", String.valueOf(a)).find(Text.class);
+        textLista = DataSupport.where("users_id = ?", String.valueOf(a)).order(" Id desc").find(Text.class);
 
         // Log.d("aafsfs=--", "onCreate: "+textLista.get(0).getContent());
 

@@ -249,7 +249,7 @@ if (usersa!=null&&userature){
     text.setCreationTime(simpleDateFormat.format(date));
     text.save();
     textView.setText("");
-    Util.showToast(TextActivity.this,"baocunchenggong");
+    Util.showToast(TextActivity.this,"保存成功");
     Intent intentaa  = new Intent(TextActivity.this,ShowActivity.class);
     intentaa.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
     intentaa.putExtra("Number",usersa.getId());
